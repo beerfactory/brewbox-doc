@@ -3,15 +3,21 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BrewBox documentation's documentation!
-=================================================
+Welcome to BrewBox's documentation!
+===================================
 
-Contents:
+This is the BrewBox project documentation.
+
+BrewBox is part of `Beerfactory <http://www.beerfactory.org>`_ and consists of hardware and software components combined together to monitor and control a home brewery. This documentation contains all the project knowledge from specification to user documentation.
+
+Content
+-------
 
 .. toctree::
    :maxdepth: 2
 
-
+   requirements
+   architecture
 
 Indices and tables
 ==================
