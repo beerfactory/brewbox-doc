@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'BrewBox documentation'
-copyright = u'2013, Nicolas Jouanin'
+copyright = u'2013, Beerfactory'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

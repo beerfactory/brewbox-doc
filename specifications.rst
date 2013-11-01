@@ -1,26 +1,34 @@
 ##############
-Spécifications
+Specifications
 ##############
 
-BrewBox vise à répondre aux besoins de contrôle et d'automatisation d'une pico-brasserie et donc du processus de brassage. Après avoir rappelé le `contexte`_ du projet, la section `spécifications fonctionnelles`_ aborde la description des fonctionnalités que doit implémenter BrewBox pour satisfaire ce besoin. La section `spécifications non fonctionnelles`_ aborde ensuite les exigences que doit satisfaire le système afin de pouvoir être mise en oeuvre par tout amateur disposant d'un peu de temps et quelques connaissances en informatique et électronique.
+Content :
+- the first part of this documentation describes the `context`_ in which BrewBox can help.
+- second part addresses the description of the `functional requirements`_ BrewBox must meet.
+- last part describes `non-functional requirements`_ which must be satisfied by BrewBox in order to be implemented by any hobbyist having some time and a minimum of knwoledge in electronic and computing.
 
 .. note::
 
-   Les spécifications de BrewBox ne sont pas *figées dans le marbre*. Tous les commentaires, remarques ou propostions d'améliorations sont les bienvenus.
+   BrewBox are not *set in stone*. Any comments or improvement proposals are welcome.
 
-Contexte
+Context
 ========
 
-.. note::
+BrewBox tries to answer the need, which comes in every home brewer's mind, of monitoring and controling a micro brewery. Usually, main reasons for that are :
+- being able to ensure a constant quality of the beer produced
+- improving brew process efficiency as quantities produced increase.
 
- Brassage amateur => construction d'une pico-brasserie
- Amélioration de la qualité => Besoin de contrôler le processus de brassage
- Principes du DIY => composants standards + bricolage de base
+Monitoring usually means adding some sensors, mostly for temperature control during mash and boiling steps. Controling requires more components for building control panel with displays, switches or PID controller. Finally complete automation requires professional equipements like programmable logic controller, which is not something affordable for every hobbyist.
+All theses steps also requires good knowledge in electronic and electricity to deal with components from small temperature probes to 5500W heater for example.
 
-Spécifications fonctionnelles
-=============================
+The goal of BrewBox is to help brewers achieve this goal by providing a system :
+- flexible enough to fit any configurations of brewery equipements with sensors
+- offering a large set of features for monitoring, controling and automate the brewery activity.
 
-.. Les spécifications fonctionnelles décrivent ce que le système doit faire
+Functional requirements
+=======================
+
+.. Functional requirements describe what the system must do
 
 En première approche, le diagramme suivant présente les cas d'utilisation de BrewBox dans le contexte du brassage amateur. Les paragraphes suivants décriront chaque cas d'utilisation afin d'en faire apparaitre les fonctionnalités détaillées.
 
@@ -50,10 +58,10 @@ Configurer l'interface avec les capteurs/actionneurs
 
 
 
-Spécifications non fonctionnelles
-=================================
+Non functional requirements
+===========================
 
-.. Les spécifications non fonctionnelles décrivent ce que le système doit être
+.. Non-functional requirements describe what the system must be
 
 .. topic:: Qu'est-ce qu'un capteur ?
 
