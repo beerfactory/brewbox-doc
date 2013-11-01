@@ -85,7 +85,7 @@ Taille d'un horodatage en python::
 >>> import sys
 >>> from datetime import datetime
 >>> print(sys.getsizeof(datetime.now()))
-48
+>>> 48
 
 Estimation de la taille d'une donnée : 10 octets maxi
 
