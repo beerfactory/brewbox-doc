@@ -15,6 +15,7 @@
 import sys
 import os
 
+import sphinx_bootstrap_theme
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -101,16 +102,27 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #html_theme = 'default'
-html_theme = "sphinx_rtd_theme"
-
+html_theme = 'bootstrap'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+# Theme options are theme-specific and customize the look and feel of a
+# theme further.
+html_theme_options = {
+    # HTML navbar class (Default: "navbar") to attach to <div> element.
+    # For black navbar, do "navbar navbar-inverse"
+    'navbar_class': "navbar navbar-inverse",
+
+    # Location of link to source.
+    # Options are "nav" (default), "footer" or anything else to exclude.
+    'source_link_position': "footer",
+
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
-html_theme_path = ["_themes", ]
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

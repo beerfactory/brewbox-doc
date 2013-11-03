@@ -1,6 +1,11 @@
 {% extends "!layout.html" %}
 
-{% block extrahead %}
+{% set css_files = css_files + ['_static/local.css']%}
+{% block linktags %}
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:700,400,400italic|Ubuntu:500,300,300italic" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{% block footer %}
 {{ super() }}
 
 <!-- Piwik -->
