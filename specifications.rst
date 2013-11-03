@@ -3,9 +3,10 @@ Specifications
 ##############
 
 Content :
-- the first part of this documentation describes the `context`_ in which BrewBox can help.
-- second part addresses the description of the `functional requirements`_ BrewBox must meet.
-- last part describes `non-functional requirements`_ which must be satisfied by BrewBox in order to be implemented by any hobbyist having some time and a minimum of knwoledge in electronic and computing.
+
+* the first part of this documentation describes the `context`_ in which BrewBox can help.
+* second part addresses the description of the `functional requirements`_ BrewBox must meet.
+* last part describes `non functional requirements`_ which must be satisfied by BrewBox in order to be implemented by any hobbyist having some time and a minimum of knwoledge in electronic and computing.
 
 .. note::
 
@@ -15,15 +16,17 @@ Context
 ========
 
 BrewBox tries to answer the need, which comes in every home brewer's mind, of monitoring and controling a micro brewery. Usually, main reasons for that are :
-- being able to ensure a constant quality of the beer produced
-- improving brew process efficiency as quantities produced increase.
+
+* being able to ensure a constant quality of the beer produced
+* improving brew process efficiency as quantities produced increase.
 
 Monitoring usually means adding some sensors, mostly for temperature control during mash and boiling steps. Controling requires more components for building control panel with displays, switches or PID controller. Finally complete automation requires professional equipements like programmable logic controller, which is not something affordable for every hobbyist.
 All theses steps also requires good knowledge in electronic and electricity to deal with components from small temperature probes to 5500W heater for example.
 
 The goal of BrewBox is to help brewers achieve this goal by providing a system :
-- flexible enough to fit any configurations of brewery equipements with sensors
-- offering a large set of features for monitoring, controling and automate the brewery activity.
+
+* flexible enough to fit any configurations of brewery equipements with sensors
+* offering a large set of features for monitoring, controling and automate the brewery activity.
 
 Functional requirements
 =======================
@@ -36,25 +39,25 @@ En première approche, le diagramme suivant présente les cas d'utilisation de B
 .. image:: images/UseCaseDiagram.png
     :align: center
 
-Collecter les données des capteurs
-----------------------------------
+Collect data from sensors
+-------------------------
 
 Les capteurs installés dans une pico-brasserie ont pour rôle de mesurer des grandeurs physiques essentielles au brassage telles que la température du moût, la température de la cuve d'ébullition ou encore la consommation électrique.
 
-Contrôler les actionneurs
--------------------------
+Control actuators
+-----------------
 
-Surveiller le processus de brassage
------------------------------------
+Monitor brewing process
+-----------------------
 
-Exécuter un brassin
--------------------
+Run batch
+---------
 
-Configurer un brassin
----------------------
+Setup batch
+-----------
 
-Configurer l'interface avec les capteurs/actionneurs
--------------------------------------------------------
+Configure interfaces with sensors/actuators
+-------------------------------------------
 
 
 
@@ -72,30 +75,3 @@ Non functional requirements
 
     + *capteurs analogiques*
     + *capteurs numériques*
-
-Dimensionnement
----------------
-
-Volumétrie des données collectées
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Le nombre de mesures à traiter dépend de:
-
-+ du nombre de capteurs à interroger
-+ de la fréquence de collecte des mesures
-
-A titre d'exemple, la collecte des données d'un capteur de température toutes les 5 secondes produira 12 mesures par minute ou encore 720 mesures par heure.
-
-La volumétrie (en terme d'occupation mémoire) est directement liée à la taille de la structure de données utilisée pour stocker les mesures.
-
-Taille d'un horodatage en python::
-
->>> import sys
->>> from datetime import datetime
->>> print(sys.getsizeof(datetime.now()))
->>> 48
-
-Estimation de la taille d'une donnée : 10 octets maxi
-
-=> On arrive à 58 octets mini par mesure, donc 696 octets par minutes ou 41760 octets par heure
-
