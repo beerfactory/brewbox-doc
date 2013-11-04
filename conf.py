@@ -112,11 +112,11 @@ html_theme = 'default'
 html_theme_options = {
     # HTML navbar class (Default: "navbar") to attach to <div> element.
     # For black navbar, do "navbar navbar-inverse"
-    'navbar_class': "navbar navbar-inverse",
+    #'navbar_class': "navbar navbar-inverse",
 
     # Location of link to source.
     # Options are "nav" (default), "footer" or anything else to exclude.
-    'source_link_position': "footer",
+    #'source_link_position': "footer",
 
 }
 
@@ -272,3 +272,7 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+html_context = {
+   "disqus_shortname" : 'beerfactory',
+}
