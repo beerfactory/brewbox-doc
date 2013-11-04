@@ -275,4 +275,5 @@ texinfo_documents = [
 
 html_context = {
    "disqus_shortname" : 'beerfactory',
+   "piwik_siteId" : '4',
 }
