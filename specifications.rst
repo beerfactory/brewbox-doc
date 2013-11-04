@@ -2,7 +2,7 @@
 Specifications
 ##############
 
-Content :
+** Content : **
 
 * First part of this documentation describes the `context`_ in which BrewBox can help.
 * Second part addresses the description of the `functional requirements`_ BrewBox must meet.
