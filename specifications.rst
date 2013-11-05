@@ -2,11 +2,7 @@
 Specifications
 ##############
 
-** Content : **
-
-* First part of this documentation describes the `context`_ in which BrewBox can help.
-* Second part addresses the description of the `functional requirements`_ BrewBox must meet.
-* Last part describes `non functional requirements`_ which must be satisfied by BrewBox in order to be implemented by any hobbyist having some time and a minimum of knwoledge in electronic and computing.
+The rirst part of this documentation describes the `context`_ in which BrewBox can help. Second part addresses the description of the `functional requirements`_ BrewBox must meet. Last part describes `non functional requirements`_ which must be satisfied by BrewBox in order to be implemented by any hobbyist having some time and a minimum of knwoledge in electronic and computing.
 
 .. note::
 
@@ -15,17 +11,16 @@ Specifications
 Context
 ========
 
-BrewBox tries to answer the need, which comes to the mind of every brewer, of monitoring and controling a micro brewery. Usually, main reasons for that are :
+BrewBox tries to answer the need, which comes to the mind of every brewer, of monitoring and controling a micro brewery. Brewer's main motivations are usually :
 
 * being able to ensure a constant quality of the beer produced
 * improving brew process efficiency as quantities produced increase.
 
-Monitoring usually means adding some sensors, mostly for temperature control during mash and boiling steps. Controling requires more components for building control panel with displays, switches or PID controller. Finally complete automation requires professional equipements like programmable logic controller, which is not something affordable for every hobbyist.
-All theses steps also requires good knowledge in electronic and electricity to deal with components from small temperature probes to 5500W heater for example.
+Monitoring is usually achived by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. Controling requires more components for building control panel with displays, switches or PID controller. Finally complete automation requires professional equipments like programmable logic controller and good knowledge in electronic and electricity.
 
 The goal of BrewBox is to help brewers achieve this goal by providing a system :
 
-* flexible enough to fit any configurations of brewery equipements with sensors
+* flexible enough to fit with sensors any configurations of brewery equipements
 * offering a large set of features for monitoring, controling and automate the brewery activity.
 
 Functional requirements
@@ -38,35 +33,39 @@ BrewBox functional requirements can be described through several use cases repre
 .. image:: images/UseCaseDiagram.png
     :align: center
 
-The following sections describe each use case in details and will therefore introduce BrewBox concepts and highlight main features.
-
-Actors
-------
-
-Use cases
----------
+The following sections describe each use case in details and therefore introduce BrewBox concepts and highlight main features.
 
 Collect data from sensors
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
-Les capteurs installés dans une pico-brasserie ont pour rôle de mesurer des grandeurs physiques essentielles au brassage telles que la température du moût, la température de la cuve d'ébullition ou encore la consommation électrique.
+**Primary actor** : brewery (sensors)
+
+**Brief description**: Collect and convert signals coming from sensors. Make data available for monitoring and control.
+
+**Preconditions**
+
+**Postconditions**
+
+Main scenario
+^^^^^^^^^^^^^^
 
 Control actuators
-^^^^^^^^^^^^^^^^^
-
-
-Monitor brewing process
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Run batch
-^^^^^^^^^
-
-Setup batch
-^^^^^^^^^^^
-
+-----------------
 
 Configure interfaces with sensors/actuators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------------------
+
+Monitor brewing process
+-----------------------
+
+
+Setup batch
+-----------
+
+Run batch
+---------
+
+
 
 
 
