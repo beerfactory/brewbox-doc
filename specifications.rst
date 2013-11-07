@@ -13,15 +13,15 @@ Context
 
 BrewBox tries to answer the need, which comes to the mind of every brewer, of monitoring and controling a micro brewery. Brewer's main motivations are usually :
 
-* being able to ensure a constant quality of the beer produced
+* being able to ensure a constant quality of the beer produced.
 * improving brew process efficiency as quantities produced increase.
 
 **Monitoring** is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. **Controling** requires more components for building control panel with displays, switches or PID controller. Finally complete **automation** requires professional equipments like programmable logic controller and good knowledge in electronic and electricity.
 
 The goal of BrewBox is to help brewers achieve these three goals by providing a system :
 
-* flexible enough to fit any configurations of brewery equipements with sensors
-* offering a large set of features for monitoring, controling and automate the brewery activity
+* flexible enough to fit any configurations of brewery equipements with sensors.
+* offering a large set of features for monitoring, controling and automate the brewery activity.
 
 Functional requirements
 =======================
@@ -33,25 +33,12 @@ BrewBox functional requirements can be described through several use cases repre
 .. image:: images/UseCaseDiagram.png
     :align: center
 
-The following sections describe each use case in details and therefore introduce BrewBox concepts and highlight main features.
+The following sections describe each use case in details and therefore introduce BrewBox concepts and highlight main features:
 
-Collect data from sensors
--------------------------
+.. toctree::
+  :maxdepth: 1
 
-**Primary actor** : brewery (sensors)
-
-**Brief description**: Collect and convert signals coming from sensors. Make data available for monitoring and control.
-
-**Preconditions**
-
-*
-
-**Postconditions**
-
-* data collections runs in background throughout the brewing process.
-
-Main scenario
-^^^^^^^^^^^^^^
+  use_cases/collect_data
 
 Control actuators
 -----------------
@@ -71,7 +58,7 @@ Run batch
 
 
 
-
+.. _non-functional-requirements:
 
 Non functional requirements
 ===========================
