@@ -2,7 +2,7 @@
 Collect data from sensors
 #########################
 
-This use case describes how BrewBox collects signals coming from sensors fitted in the micro brewery and converts them into data usable for monitoring and control.
+This use case describes how BrewBox collects signals coming from sensors fitted in a micro brewery and converts them into data usable for monitoring and control.
 
 Preconditions
 =============
