@@ -17,6 +17,7 @@ Content
   :maxdepth: 2
 
   specifications
+  spec_model/model
   architecture
 
 Indices and tables
