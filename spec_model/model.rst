@@ -11,3 +11,4 @@ Model classes
   :maxdepth: 1
   
   brewery
+  sensor
