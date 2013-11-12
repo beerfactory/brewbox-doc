@@ -3,7 +3,7 @@ Brewery
 #######
 
 
-Brewery class is the representation of a brewery in BrewBox. This is the central object for accessing equipments, sensors actuators and data.
+Brewery class is the representation of a brewery in BrewBox. This is the central object for accessing equipments, sensors, actuators and data.
 
 .. image:: /images/CD_Brewery.png
     :align: center
@@ -12,14 +12,14 @@ Attributes
 ==========
 
 * *Name* : a short descriptive name for the brewery
-* *Description* (optional): a longer description for the brewery
-* *Status* : Status of the brewery. Value can be one of :
-
-  * ACTIVE : Active status points the brewery being used by BrewBox for monitoring and controling.
-  * INACTIVE : Status used for breweries known by BrewBox but not currently in use for monitoring or control. 
-  * PLANNED : Status for breweries being configured.
-  * RETIRED : Status used for breweries not used anymore.
+* *Description* : a longer description for the brewery (optional)
 * *StartDate* : Date when the brewery has been used for the first time
+
+Relations
+=========
+
+* *Equipments* : a list of :doc:`equipments` describng the brewery composition.
+* *Brewer* : link to the home :doc:`brewer <brewer>` using the brewery.
 
 Rules
 =====
