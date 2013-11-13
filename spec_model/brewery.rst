@@ -18,7 +18,7 @@ Attributes
 Relations
 =========
 
-* *Equipments* : a list of :doc:`equipments` describng the brewery composition.
+* *Equipments* : a list of :doc:`equipments` describing the brewery composition.
 * *Brewer* : link to the home :doc:`brewer <brewer>` using the brewery.
 
 Rules
