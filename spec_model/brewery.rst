@@ -24,4 +24,4 @@ Relations
 Rules
 =====
 
-BrewBox can manage several breweries but only one can be used (ie. monitored or controled) at the same time. There can be therefore several instances of Brewery class but only with ``status==ACTIVE``.
+BrewBox can monitor and control only one brewery. There can only exist one instance of Brewery class. 
