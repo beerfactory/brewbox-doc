@@ -33,7 +33,7 @@ BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in the :d
 .. image:: /images/CD_BrewerySensorsList.png
     :align: center
 
-At startup, BrewBox reads the sampling configuration for all active sensors.
+At startup, BrewBox reads the sampling configuration for all active sensors (ie. sensor instances with Status==ACTIVE).
 
 Signal conversion
 -----------------
