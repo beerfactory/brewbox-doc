@@ -2,7 +2,7 @@
 Collect data from sensors
 #########################
 
-This use case describes how BrewBox collects signals coming from sensors fitted in a micro brewery and converts them into data usable for monitoring and control.
+This use case describes how BrewBox collects signals from sensors fitted in a micro brewery and converts them into data usable for monitoring and control.
 
 Preconditions
 =============
@@ -26,12 +26,14 @@ Collecting data from sensors process is based on `sampling sensors signal <Senso
 Sensors sampling
 ----------------
 
-BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in the :doc:`brewery </spec_model/brewery>`:
+BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in the :doc:`equipements </spec_model/equipment>` composing the :doc:`brewery </spec_model/brewery>`. Each sensor is associated with a sampling configuration describing how and when sampling may occur :
 
 .. TODO : Add an class diagram showing relation between brewery and sensors
 
-.. image:: images/TODO.png
+.. image:: /images/CD_BrewerySensorsList.png
     :align: center
+
+At startup, BrewBox reads the sampling configuration for all active sensors.
 
 Signal conversion
 -----------------
