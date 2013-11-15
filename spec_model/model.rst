@@ -16,3 +16,4 @@ Model classes
   brewer
   brewery
   sensor
+  samplingconfiguration

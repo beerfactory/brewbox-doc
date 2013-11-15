@@ -26,7 +26,7 @@ Collecting data from sensors process is based on `sampling sensors signal <Senso
 Sensors sampling
 ----------------
 
-BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in the :doc:`equipements </spec_model/equipment>` composing the :doc:`brewery </spec_model/brewery>`. Each sensor is associated with a sampling configuration describing how and when sampling may occur :
+BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in :doc:`equipements </spec_model/equipment>` composing the :doc:`brewery </spec_model/brewery>`. Each sensor is associated with a sampling configuration describing how and when sampling may occur :
 
 .. TODO : Add an class diagram showing relation between brewery and sensors
 
