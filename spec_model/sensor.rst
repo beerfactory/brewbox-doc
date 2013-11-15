@@ -10,6 +10,7 @@ Attributes
 * *Name* : a short descriptive name for the sensor
 * *Description* : a longer description for the sensor (optional)
 * *Status* : status of the sensor in the brewery. Can be one of :
+
   * PLANNED : sensor is defined in BrewBox but not yet fitted in the brewery equipment
   * INSTALLED : sensor is fitted in brewery but doesn't provide any information yet
   * ACTIVE : sensor is active and ready for collecting data
