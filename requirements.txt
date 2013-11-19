@@ -1,2 +1,2 @@
 Sphinx
-sphinxcontrib-yuml
+sphinxcontrib-yuml==0.3.1
