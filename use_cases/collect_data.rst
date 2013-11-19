@@ -28,10 +28,15 @@ Sensors sampling
 
 BrewBox maintains a list of :doc:`sensors </spec_model/sensor>` fitted in :doc:`equipements </spec_model/equipment>` composing the :doc:`brewery </spec_model/brewery>`. Each sensor is associated with a sampling configuration describing how and when sampling may occur :
 
-.. TODO : Add an class diagram showing relation between brewery and sensors
-
-.. image:: /images/CD_BrewerySensorsList.png
+.. yuml::
     :align: center
+    :style: plain
+    :scale: 80
+
+    [Brewery|Name;Description;Status;StartDate]<>-*>[Equipement|Name;Description]
+    [Equipement]1-*>[Sensor|Name;Description;Status]
+    [Sensor]1-1>[SamplingConfiguration]
+    [Sensor]1-1>[ConversionConfiguration]
 
 At startup, BrewBox reads the sampling configuration for all active sensors (ie. sensor instances with Status==ACTIVE).
 

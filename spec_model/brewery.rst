@@ -5,8 +5,12 @@ Brewery
 
 Brewery class is the representation of a brewery in BrewBox. This is the central object for accessing equipments, sensors, actuators and data.
 
-.. image:: /images/CD_Brewery.png
+.. yuml::
     :align: center
+    :style: plain
+    :scale: 80
+
+    [Brewery|Name;Description;Status;StartDate]
 
 Attributes
 ==========

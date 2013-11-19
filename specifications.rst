@@ -11,14 +11,14 @@ First part of this documentation describes the `context`_ in which BrewBox can h
 Context
 ========
 
-BrewBox tries to answer the need, which comes to the mind of every brewer, of monitoring and controling a micro brewery. Brewer's main motivations are usually :
+BrewBox tries to answer the need, which comes to the mind of every brewer, of monitoring and controling a micro brewery. Main motivations are usually :
 
 * being able to ensure a constant quality of the beer produced.
 * improving brew process efficiency as quantities produced increase.
 
-**Monitoring** is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. **Controling** requires more components for building control panel with displays, switches or PID controller. Finally complete **automation** requires professional equipments like programmable logic controller and good knowledge in electronic and electricity.
+**Monitoring** is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. **Controling** requires more components for building control panel with displays, switches or PID controller. Finally complete **automation** may require professional equipments like programmable logic controller and good knowledge in electronic and electricity.
 
-The goal of BrewBox is to help brewers achieve these three goals by providing a system :
+The goal of BrewBox is to help home brewers achieve these three goals by providing a system :
 
 * flexible enough to fit any configurations of brewery equipements with sensors.
 * offering a large set of features for monitoring, controling and automate the brewery activity.
@@ -37,7 +37,7 @@ BrewBox functional requirements can be described through several use cases repre
 
     [Brewer]-(Setup batch)
     [Brewer]-(Monitor brewing process)
-    [Brewer]-(Configure interfaces with sensors / actuators)
+    [Brewer]-(Configure sensors and actuators)
     (Monitor brewing process)>(Collect data from sensors{bg:beige})
     (Monitor brewing process)>(Control actuators{bg:beige})
 
