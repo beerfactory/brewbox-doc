@@ -30,6 +30,7 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.todo',
+    'sphinxcontrib.yuml'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

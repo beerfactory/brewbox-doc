@@ -30,8 +30,25 @@ Functional requirements
 
 BrewBox functional requirements can be described through several use cases represented on this diagram :
 
-.. image:: images/UseCaseDiagram.png
+.. yuml::
     :align: center
+    :type: usecase
+    :scale: 80
+
+    [Brewer]-(Setup batch)
+    [Brewer]-(Monitor brewing process)
+    [Brewer]-(Configure interfaces with sensors / actuators)
+    (Monitor brewing process)>(Collect data from sensors{bg:beige})
+    (Monitor brewing process)>(Control actuators{bg:beige})
+
+.. yuml::
+    :align: center
+    :type: usecase
+    :scale: 80
+
+    [Brewery]-(Run batch)
+    (Run batch)>(Collect data from sensors{bg:beige})
+    (Run batch)>(Control actuators{bg:beige})
 
 The following sections describe each use case in details and therefore introduce BrewBox concepts and highlight main features:
 
