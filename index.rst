@@ -6,7 +6,7 @@
 Welcome to BrewBox project documentation
 ================================================
 
-BrewBox is part of projects developped by `Beerfactory <http://www.beerfactory.org>`_. It consists of software and hardware components which provide solutions to monitor, control and automate a home brewery. This documentation contains all the project's knowledge, from its :doc:`specifications <specifications>` to end-user documentation.
+BrewBox is part of projects developped by `Beerfactory <http://www.beerfactory.org>`_. It consists of software and hardware components which provide solutions to monitor, control and automate a home brewery. This documentation contains all the project's knowledge, from its :doc:`specifications </specifications/index>` to end-user documentation.
 
 Bonne lecture !
 
@@ -16,7 +16,7 @@ Content
 .. toctree::
   :maxdepth: 2
 
-  specifications
+  specifications/index.rst
   spec_model/model
   architecture
 
