@@ -2,7 +2,7 @@
 Specifications
 ##############
 
-This documentation is divided into 3 parts :
+This documentation is divided into three parts :
 
 * `context`_ in which BrewBox can help. 
 * description of `functional requirements`_ achieved by BrewBox. 
@@ -33,7 +33,12 @@ Functional requirements
 
 .. Functional requirements describe what the system must do
 
-BrewBox functional requirements can be described through several use cases represented on this diagram :
+Functional requirements can be described as through use cases available to BrewBox users.
+
+Brewer
+------
+
+:doc:`Home brewer <model/brewer>` use cases are shown on the following diagram :
 
 .. yuml::
     :align: center
@@ -46,6 +51,11 @@ BrewBox functional requirements can be described through several use cases repre
     [Brewer]-(Configure sensors and actuators)
     (Monitor brewing process)>(Collect data from sensors{bg:beige})
     (Monitor brewing process)>(Control actuators{bg:beige})
+
+Brewery
+-------
+
+:doc:`Brewery <model/brewery>` use cases are shown on the following diagram :
 
 .. yuml::
     :align: center
@@ -64,23 +74,6 @@ introduce BrewBox concepts and highlight main features:
   :maxdepth: 1
 
   usecases/collect_data
-
-Control actuators
------------------
-
-Configure interfaces with sensors/actuators
--------------------------------------------
-
-Monitor brewing process
------------------------
-
-
-Setup batch
------------
-
-Run batch
----------
-
 
 
 .. _non-functional-requirements:
