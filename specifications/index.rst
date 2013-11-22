@@ -2,11 +2,11 @@
 Specifications
 ##############
 
-First part of this documentation describes the `context`_ in which BrewBox can
-help. Second part addresses the description of the `functional requirements`_
-achieved by BrewBox. Last part describes `non functional requirements`_ which
-must be satisfied by BrewBox in order to be implemented by any hobbyist having
-some time and a minimum of knowledge in electronic and computing.
+This documentation is divided into 3 parts :
+
+* `context`_ in which BrewBox can help. 
+* description of `functional requirements`_ achieved by BrewBox. 
+* description of `non functional requirements`_ which must be satisfied by BrewBox to meet any hobbyist knowledge and capacity.
 
 .. note::
 
@@ -16,39 +16,30 @@ some time and a minimum of knowledge in electronic and computing.
 Context
 ========
 
-BrewBox tries to answer the need, which comes to the mind of every brewer, of
-monitoring and controling a micro brewery. Main motivations are usually :
+BrewBox tries to answer the **need of monitoring and controling** a micro brewery. Usually, brewers motivations are :
 
 * being able to ensure a constant quality of the beer produced.
 * improving brew process efficiency as quantities produced increase.
 
-**Monitoring** is usually achieved by fitting the micro brewery with sensors,
-mostly for temperature follow-up during mash and boiling steps. **Controling**
-requires more components for building control panel with displays, switches or
-PID controller. Finally complete **automation** may require professional
-equipments like programmable logic controller and good knowledge in electronic
-and electricity.
+Monitoring is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. Controling requires more components and knowledges like for building control panel with displays, switches or PID controller. Finally complete automation may require professional equipments like programmable logic controller and good knowledge in electronic and electricity.
 
-The goal of BrewBox is to help home brewers achieve these three goals by
-providing a system :
+The goal of BrewBox is to help home brewers to achieve these three goals by providing a system :
 
-* flexible enough to fit any configurations of brewery equipements with sensor
-.
-* offering a large set of features for monitoring, controling and automate the
-brewery activity.
+* flexible enough to fit with sensors any configurations of brewery equipements.
+* offering a large set of features for monitoring, controling and automate the brewery activity.
 
 Functional requirements
 =======================
 
 .. Functional requirements describe what the system must do
 
-BrewBox functional requirements can be described through several use cases
-represented on this diagram :
+BrewBox functional requirements can be described through several use cases represented on this diagram :
 
 .. yuml::
     :align: center
     :type: usecase
     :scale: 80
+    :style: plain
 
     [Brewer]-(Setup batch)
     [Brewer]-(Monitor brewing process)
@@ -60,6 +51,7 @@ represented on this diagram :
     :align: center
     :type: usecase
     :scale: 80
+    :style: plain
 
     [Brewery]-(Run batch)
     (Run batch)>(Collect data from sensors{bg:beige})
