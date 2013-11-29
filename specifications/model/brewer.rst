@@ -13,19 +13,18 @@ Brewer is used for storing personal information concerning the brewer, user of t
 Attributes
 ==========
 
-* *FirstName* : Brewer first name
-* *LastName* : Brewer last name
-* *Email* : Brewer email, which can be used to send automatic email notifications
-* *PhoneNumber* : Brewer phone number, which can be used to send automatic SMS notifications (if available)
-* *Language* : Brewer prefered language
-* *Country* : Brewer country location
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+first_name		   Brewer first name (mandatory)
+last_name*		   Brewer last name (mandatory)
+email 			   Brewer email (mandatory), which can be used to send automatic email notifications 
+phone_number	   Brewer phone number, which can be used to send automatic SMS notifications (if available)
+language		   Brewer prefered language
+country			   Brewer country location
+=================  =========================================================================================
 
 Relations
 =========
 
 * *Brewery* : link to the :doc:`brewery <brewery>` owned and managed by BrewBox.
-
-Rules
-=====
-
-FirstName, LastName and Email are mandatory.
