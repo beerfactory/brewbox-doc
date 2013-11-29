@@ -4,8 +4,11 @@ Brewer
 
 Brewer is used for storing personal information concerning the brewer, user of the brewery.
 
-.. image:: /images/CD_Brewer.png
+.. yuml::
     :align: center
+    :style: plain
+
+    [Brewer|firstname;lastname;email;phonenumber;language;country]->[Brewery]
 
 Attributes
 ==========

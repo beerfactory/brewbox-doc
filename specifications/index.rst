@@ -10,8 +10,7 @@ This documentation is divided into three parts :
 
 .. note::
 
-   BrewBox requirements are not *set in stone*. Any comments or improvement
-   proposals are welcome.
+   BrewBox requirements are *not set in stone* and specification documentation is *not exhaustive*. Any comments or improvement proposals are welcome.
 
 Context
 ========
@@ -21,9 +20,9 @@ BrewBox tries to answer the **need of monitoring and controling** a micro brewer
 * being able to ensure a constant quality of the beer produced.
 * improving brew process efficiency as quantities produced increase.
 
-Monitoring is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. Controling requires more components and knowledges like for building control panel with displays, switches or PID controller. Finally complete automation may require professional equipments like programmable logic controller and good knowledge in electronic and electricity.
+Monitoring is usually achieved by fitting the micro brewery with sensors, mostly for temperature follow-up during mash and boiling steps. Controling requires more components and knowledges for building control panel with displays, switches or PID controller. Finally complete automation may require professional equipments like programmable logic controller and good knowledge in electronic and electricity.
 
-The goal of BrewBox is to help home brewers to achieve these three goals by providing a system :
+The goal of BrewBox is to help home brewers to achieve this goal by providing a system :
 
 * flexible enough to fit with sensors any configurations of brewery equipements.
 * offering a large set of features for monitoring, controling and automate the brewery activity.
@@ -35,25 +34,18 @@ Functional requirements
 
 Functional requirements can be described as through use cases available to BrewBox users.
 
-Brewer
-------
-
 :doc:`Home brewer <model/brewer>` use cases are shown on the following diagram :
 
 .. yuml::
     :align: center
     :type: usecase
-    :scale: 80
     :style: plain
 
     [Brewer]-(Setup batch)
     [Brewer]-(Monitor brewing process)
-    [Brewer]-(Configure sensors and actuators)
+    [Brewer]-(Configure brewery equipements)
     (Monitor brewing process)>(Collect data from sensors{bg:beige})
     (Monitor brewing process)>(Control actuators{bg:beige})
-
-Brewery
--------
 
 :doc:`Brewery <model/brewery>` use cases are shown on the following diagram :
 
