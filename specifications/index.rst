@@ -81,6 +81,8 @@ Brewery activities
 Class model
 ============
 
+Here is a list of class used in the specification model :
+
 .. toctree::
   :maxdepth: 2
   
