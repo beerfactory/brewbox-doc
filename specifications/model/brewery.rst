@@ -8,9 +8,9 @@ Brewery class is the representation of a brewery in BrewBox. This is the central
 .. yuml::
     :align: center
     :style: plain
-    :scale: 80
 
-    [Brewery|Name;Description;Status;StartDate]
+    [Brewer]1-1>[Brewery|Name;Description;Status;StartDate]
+    [Brewery]<>-*>[Equipement]
 
 Attributes
 ==========

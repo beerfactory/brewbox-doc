@@ -8,7 +8,7 @@ Brewer is used for storing personal information concerning the brewer, user of t
     :align: center
     :style: plain
 
-    [Brewer|firstname;lastname;email;phonenumber;language;country]->[Brewery]
+    [Brewer|first_name;last_name;email;phone_number;language;country]1-1>[Brewery]
 
 Attributes
 ==========

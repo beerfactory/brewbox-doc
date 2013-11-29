@@ -4,8 +4,12 @@ SamplingConfiguration
 
 SamplingConfiguration class holds configuration attributes used by BrewBox to compute :doc:`sensors <sensor>` scheduling. Sampling configuration can be `basic`, `interval based` or `cron-style`. 
 
-.. image:: /images/CD_SamplingConfiguration.png
+.. yuml::
     :align: center
+    :style: plain
+
+    [SamplingConfiguration|start]^-[IntervalSamplingConfiguration|interval;unit]
+    [SamplingConfiguration]^-[CronStyleSamplingConfiguration|year;month;day;week;day_of_week;hour;minute;second]
 
 SamplingConfiguration
 #####################
@@ -15,13 +19,14 @@ SamplingConfiguration is an abstract class holding configuration attributes comm
 Attributes
 ----------
 
-=============== =================================================================================================
-Field           Description
-=============== =================================================================================================
-``start``	Sensor sampling lifetime. Value can be :
-					* ``FOREVER`` : sampling will occur once BrewBox is started and never stop until it shutdowns
-					* ``BATCH`` : sampling will occur only during brewing batchs.
-=============== =================================================================================================
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+start              Sensor sampling lifetime. Value can be :
+
+                   * FOREVER : sampling will occur once BrewBox is started and never stop until it shutdowns
+                   * BATCH : sampling will occur only during brewing batchs.
+=================  =========================================================================================
 
 IntervalSamplingConfiguration
 #############################
@@ -31,19 +36,20 @@ IntervalSamplingConfiguration holds configuration attributes for interval sampli
 Attributes
 ----------
 
-=============== ======================================================
-Field           Description
-=============== ======================================================
-``interval``	sampling interval value
-``Unit``		interval value unit. Value can be:
-				* ``second``
-  				* ``minute``
-  				* ``hour``
-  				* ``day``
-  				* ``week``
-  				* ``month``
-  				* ``year``
-=============== ======================================================
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+interval	         Sampling interval value
+unit               Interval value unit. Value can be:
+
+                   * ``second``
+                   * ``minute``
+                   * ``hour``
+                   * ``day``
+                   * ``week``
+                   * ``month``
+                   * ``year``
+=================  =========================================================================================
 
 Rules
 -----
@@ -59,18 +65,18 @@ CronStyleSamplingConfiguration allows to setup sampling configuration based on `
 Attributes
 ----------
 
-=============== ======================================================
-Field           Description
-=============== ======================================================
-``year``        4-digit year number
-``month``       month number (1-12)
-``day``         day of the month (1-31)
-``week``        ISO week number (1-53)
-``day_of_week`` number or name of weekday (0-6 or mon,tue,wed,thu,fri,sat,sun)
-``hour``        hour (0-23)
-``minute``      minute (0-59)
-``second``      second (0-59)
-=============== ======================================================
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+year               4-digit year number
+month              month number (1-12)
+day                day of the month (1-31)
+week               ISO week number (1-53)
+day_of_week        number or name of weekday (0-6 or mon,tue,wed,thu,fri,sat,sun)
+hour               hour (0-23)
+minute             minute (0-59)
+second             second (0-59)
+=================  =========================================================================================
 
 Rules
 -----
