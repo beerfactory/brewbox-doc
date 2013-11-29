@@ -17,7 +17,6 @@ Content
   :maxdepth: 2
 
   specifications/index.rst
-  spec_model/model
   architecture
 
 Indices and tables
