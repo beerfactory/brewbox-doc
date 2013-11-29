@@ -9,15 +9,20 @@ Brewery class is the representation of a brewery in BrewBox. This is the central
     :align: center
     :style: plain
 
-    [Brewer]1-1>[Brewery|Name;Description;Status;StartDate]
-    [Brewery]<>-*>[Equipement]
+    [Brewer]1-1>[Brewery|name;description;start_date;status{bg:cyan}]
+    [Brewery]<>-*>[Equipment]
 
 Attributes
 ==========
 
-* *Name* : a short descriptive name for the brewery
-* *Description* : a longer description for the brewery (optional)
-* *StartDate* : Date when the brewery has been used for the first time
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+name			   Short descriptive name for the brewery
+description 	   Longer description for the brewery (optional)
+start_date		   Date when the brewery has been used for the first time
+status			   Brewery status. Can be something like *idle*, *running batch*, *running fermentation*, ...
+=================  =========================================================================================
 
 Relations
 =========
