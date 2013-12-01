@@ -9,8 +9,8 @@ Sensor class is used for storing characteristics of sensors used in :doc:`brewer
     :style: plain
 
     [Equipment]1-*>[Sensor|name;description;status{bg:cyan}]
-    [Sensor]1-1>[SamplingCongiguration]
-    [Sensor]1-1>[ConversionCongiguration]
+    [Sensor]1-1>[SamplingConfiguration]
+    [Sensor]1-1>[ConversionConfiguration]
 
 Attributes
 ==========
