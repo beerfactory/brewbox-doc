@@ -35,7 +35,6 @@ Functional requirements
 
 BrewBox functional requirements are described through :doc:`use cases <usecases/index>` representing activities available to BrewBox users.
 
-
 Home brewer activities
 ----------------------
 

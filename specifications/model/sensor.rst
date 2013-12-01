@@ -4,18 +4,30 @@ Sensor
 
 Sensor class is used for storing characteristics of sensors used in :doc:`breweries <brewery>`.
 
+.. yuml::
+    :align: center
+    :style: plain
+
+    [Equipment]1-*>[Sensor|name;description;status{bg:cyan}]
+    [Sensor]1-1>[SamplingCongiguration]
+    [Sensor]1-1>[ConversionCongiguration]
+
 Attributes
 ==========
 
-* *Name* : a short descriptive name for the sensor
-* *Description* : a longer description for the sensor (optional)
-* *Status* : status of the sensor in the brewery. Can be one of :
+=================  =========================================================================================
+Field              Description
+=================  =========================================================================================
+name 			   Short descriptive name for the sensor
+description 	   Longer description for the sensor (optional)
+status			   Current status of the sensor in the brewery. Can be one of :
 
-  * PLANNED : sensor is defined in BrewBox but not yet fitted in the brewery equipment
-  * INSTALLED : sensor is fitted in brewery but doesn't provide any information yet
-  * ACTIVE : sensor is active and ready for collecting data
-  * DISABLED : sensor is disabled for some reason and can't be used for collecting data
-  * UNREACHABLE : sensor is supposed to be active but not signals can be read by BrewBox.
+				   * ``PLANNED`` : sensor is defined in BrewBox but not yet fitted in the brewery equipment
+				   * ``INSTALLED`` : sensor is fitted in brewery but doesn't provide any information yet
+				   * ``ACTIVE`` : sensor is active and ready for collecting data
+			 	   * ``DISABLED`` : sensor is disabled for some reason and can't be used for collecting data
+				   * ``UNREACHABLE`` : sensor is supposed to be active but not signals can be read by BrewBox.
+=================  =========================================================================================
 
 Relations
 =========
