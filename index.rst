@@ -1,28 +1,37 @@
-.. BrewBox documentation documentation master file, created by
-   sphinx-quickstart on Thu Oct 24 21:46:21 2013.
+.. Brewbox documentation master file, created by
+   sphinx-quickstart on Fri Oct 31 21:50:18 2014.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to BrewBox project documentation
-================================================
+Accueil
+=======
 
-BrewBox is part of projects developped by `Beerfactory <http://www.beerfactory.org>`_. It consists of software and hardware components which provide solutions to monitor, control and automate a home brewery. This documentation contains all the project's knowledge, from its :doc:`specifications </specifications/index>` to end-user documentation.
+Bienvenue sur la documentation du projet Brewbox.
+
+Brewbox propose une solution logicielle et matérielle permentant de surveiller, controlet et automatiser un pico-brasserie.
+
+BrewBox fait partie des projets développés par `Beerfactory <http://www.beerfactory.org>`_.
+
+Ce site regroupe l'ensemble des ressources documentaires du projet, depuis ses :doc:`specifications </specifications/index>` jusqu'au :doc:`manuel d'utilisation </user_guide/index>`.
 
 Bonne lecture !
 
-Content
+
+Contenu
 -------
 
 .. toctree::
-  :maxdepth: 2
+   :maxdepth: 2
 
-  specifications/index.rst
-  architecture
+   specifications/index
+   architecture
+   development/index
+   user_guide/index
 
-Indices and tables
-==================
+
+Indexes et tables
+=================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
