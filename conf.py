@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# BrewBox documentation documentation build configuration file, created by
-# sphinx-quickstart on Thu Oct 24 21:46:21 2013.
+# Brewbox documentation build configuration file, created by
+# sphinx-quickstart on Fri Oct 31 21:50:18 2014.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,7 +31,7 @@ import os
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinxcontrib.yuml'
+    'sphinx.ext.mathjax',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -46,8 +47,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BrewBox documentation'
-copyright = u'2013, Beerfactory'
+project = 'Brewbox'
+copyright = '2014, Nicolas Jouanin'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -107,8 +108,6 @@ html_theme = 'default'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
-# Theme options are theme-specific and customize the look and feel of a
-# theme further.
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -181,7 +180,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BrewBoxdocumentationdoc'
+htmlhelp_basename = 'Brewboxdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -201,8 +200,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'BrewBoxdocumentation.tex', u'BrewBox documentation Documentation',
-   u'Nicolas Jouanin', 'manual'),
+  ('index', 'Brewbox.tex', 'Brewbox Documentation',
+   'Nicolas Jouanin', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -231,8 +230,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'brewboxdocumentation', u'BrewBox documentation Documentation',
-     [u'Nicolas Jouanin'], 1)
+    ('index', 'brewbox', 'Brewbox Documentation',
+     ['Nicolas Jouanin'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -245,8 +244,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'BrewBoxdocumentation', u'BrewBox documentation Documentation',
-   u'Nicolas Jouanin', 'BrewBoxdocumentation', 'One line description of project.',
+  ('index', 'Brewbox', 'Brewbox Documentation',
+   'Nicolas Jouanin', 'Brewbox', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -262,7 +261,5 @@ texinfo_documents = [
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
 
-html_context = {
-   "disqus_shortname" : 'beerfactory',
-   "piwik_siteId" : '4',
-}
+# Displays todos
+todo_include_todos = True
