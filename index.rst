@@ -3,21 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Accueil
+Welcome
 =======
 
-Bienvenue sur la documentation du projet Brewbox.
+Brewbox consists of software and hardware components which provide solutions to monitor, control and automate a home brewery.
 
-Brewbox propose une solution logicielle et matérielle permentant de surveiller, controlet et automatiser un pico-brasserie.
+BrewBox is part of projects developped by `Beerfactory <http://www.beerfactory.org>`_.
 
-BrewBox fait partie des projets développés par `Beerfactory <http://www.beerfactory.org>`_.
-
-Ce site regroupe l'ensemble des ressources documentaires du projet, depuis ses :doc:`specifications </specifications/index>` jusqu'au :doc:`manuel d'utilisation </user_guide/index>`.
-
-Bonne lecture !
+This documentation contains all the project's knowledge, from its :doc:`specifications </specifications/index>` to :doc:`user guide </user_guide/index>`.
 
 
-Contenu
+Content
 -------
 
 .. toctree::
@@ -29,8 +25,8 @@ Contenu
    user_guide/index
 
 
-Indexes et tables
-=================
+Indices and tables
+==================
 
 * :ref:`genindex`
 * :ref:`modindex`
