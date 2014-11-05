@@ -3,6 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. toctree::
+   :hidden:
+
+   specifications/index
+   architecture
+   development/index
+   user_guide/index
+
+
 Welcome
 =======
 
@@ -11,23 +20,3 @@ Brewbox consists of software and hardware components which provide solutions to 
 BrewBox is part of projects developped by `Beerfactory <http://www.beerfactory.org>`_.
 
 This documentation contains all the project's knowledge, from its :doc:`specifications </specifications/index>` to :doc:`user guide </user_guide/index>`.
-
-
-Content
--------
-
-.. toctree::
-   :maxdepth: 2
-
-   specifications/index
-   architecture
-   development/index
-   user_guide/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

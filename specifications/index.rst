@@ -2,83 +2,22 @@
 Specifications
 ##############
 
-Brewbox specifications description is divided into four parts which describe :
+.. toctree::
+   :hidden:
 
-* the `context`_ in which BrewBox can help.
-* `functional requirements`_ achieved by BrewBox.
-* `class model`_ used in these specifications.
-* `non functional requirements`_ which must be satisfied by BrewBox to meet any hobbyist knowledge and capacity.
+   intro
+   usecases/index
+
+Brewbox specifications are divided into several documents :
+
+* an :doc:`introduction <intro>` describing the context in which BrewBox can help.
+* a description of :doc:`use-cases <usecases/index>` and other `functional requirements`_ achieved by BrewBox.
+* a reference :doc:`class model <classmodel>`.
+* a description of `non functional requirements`_ which must be satisfied by BrewBox to meet any hobbyist knowledge and capacity.
 
 .. note::
 
    BrewBox requirements are *not set in stone* and specification documentation is *not exhaustive*. Any comments or improvement proposals are welcome.
-
-Context
-========
-
-BrewBox tries to answer the question **of monitoring and controling** a micro brewery which comes to the brewer's wishing for :
-
-* being able to ensure a constant quality of the beer produced.
-* improving brew process efficiency as quantities produced increase.
-
-Monitoring enables following the brewing process characteristics like mashing temperatre or boiling time. This is usually achived by fitting the micro brewery with sensors, like temperature probes.
-
-Controling means acting on equipments fitted in the brewery to run the brewing steps like powering heating element to boil the mash or pumps for transferring liquids between kettles. Controling also requires components and knowledges to build control panel with displays, switches or PID controller.
-
-Finally automation matches together monitoring and controling and enables automatic actuators control based on sensors data and programmable actions. It usually requires professional equipments like programmable logic controller and good knowledge in electronic and electricity.
-
-The goal of BrewBox is to help home brewers to achieve these three goals by providing a system :
-
-* flexible enough to fit any configuration of brewery with a wide range of sensors type.
-* offering a large set of features for monitoring, controling and automate the brewery activity.
-
-Functional requirements
-=======================
-
-.. Functional requirements describe what the system must do
-
-BrewBox functional requirements are described through :doc:`use cases <usecases/index>` representing activities available to BrewBox users.
-
-Home brewer activities
-----------------------
-
-.. yuml::
-    :align: center
-    :type: usecase
-    :style: plain
-
-    [Brewer]-(Setup batch)
-    [Brewer]-(Monitor brewing process)
-    [Brewer]-(Configure brewery equipements)
-    (Monitor brewing process)>(Collect data from sensors{bg:beige})
-    (Monitor brewing process)>(Control actuators{bg:beige})
-
-:doc:`Home brewer <model/brewer>` uses BrewBox for :
-
-* configuring BrewBox system in order to operate sensor and actuators fitted in its home brewery;
-* setting up batch steps and characteristics in order to build a batch program;
-* monitoring brewing process in order to compare actual and planned characteristics. This activity which includes:
-
-  * :doc:`collecting data from sensors <usecases/collect_data>` for monitoring purposes;
-  * controling actuators for follow batch program.
-
-
-Brewery activities
-------------------
-
-.. yuml::
-    :align: center
-    :type: usecase
-    :style: plain
-
-    [Brewery]-(Run batch)
-    (Run batch)>(Collect data from sensors{bg:beige})
-    (Run batch)>(Control actuators{bg:beige})
-
-:doc:`Brewery <model/brewery>` is used by BrewBox in activites which involve brewery sensors or actuators. This happen when running a batch program setup by the :doc:`Home brewer <model/brewer>` which includes:
-
-* :doc:`collecting data from sensors <usecases/collect_data>` for monitoring purposes;
-* controling actuators for follow batch program.
 
 
 Class model
