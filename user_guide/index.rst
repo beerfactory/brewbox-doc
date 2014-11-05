@@ -1,7 +1,7 @@
-#################
-Guide utilisateur
-#################
+##########
+User guide
+##########
 
 .. todo::
 
-    Document à rédiger
+    To be done
